@@ -1,0 +1,27 @@
+Lista Essencial de Metadados
+
+
+1. charset - Define o conjunto de caracteres usado na página
+   Exemplo: <meta charset="UTF-8">
+------------------------------------------------------------------------------------
+2. viewport - Ajusta a escala da página em dispositivos móveis
+   Exemplo: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+------------------------------------------------------------------------------------
+3. title - Define o título da aba do navegador (não é <meta>, mas é essencial)
+   Exemplo: <title>Nome da Página</title>
+------------------------------------------------------------------------------------
+4. description - Descreve o conteúdo da página (importante para SEO)
+   Exemplo: <meta name="description" content="Descrição da página.">
+------------------------------------------------------------------------------------
+5. keywords - Palavras-chave da página (pouco usada hoje, mas válida)
+   Exemplo: <meta name="keywords" content="html, site, exemplo">
+------------------------------------------------------------------------------------
+6. author - Nome do autor do site
+   Exemplo: <meta name="author" content="Seu Nome">
+------------------------------------------------------------------------------------
+7. X-UA-Compatible - Garante compatibilidade com versões antigas do IE
+   Exemplo: <meta http-equiv="X-UA-Compatible" content="IE=edge">
+------------------------------------------------------------------------------------
+8. favicon - Ícone da aba do navegador (não é <meta>, mas é essencial)
+   Exemplo: <link rel="icon" href="favicon.ico" type="image/x-icon">
+------------------------------------------------------------------------------------
