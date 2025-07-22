@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #f0f8ff;
+}
+
+.fonte-20 {
+    font-size: 20px;
+}
+
+#teste {
+    color: #ffffff;
+}
+
+h1 {
+    max-width: 1000px;
+    border: 5px solid #4682b4;
+    margin: 75px auto;  /*Cima, Direita, Baixo, Esquerda. Preenche a parte de fora, e se for tudo igual pode colocar somente uma vez*/
+    margin-bottom: 150px;
+    padding: 50px 50px 50px 50px; /*Cima, Direita, Baixo, Esquerda. Mesmas direções da tag "margin". Preenche a parte de dentro, e se for tudo igual pode colocar somente uma vez*/
+    background-color: #4682b4;
+    border-radius: 75px;
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    font-size: clamp(32px, 8vw, 99px); /* Define um tamanho de fonte responsivo: no mínimo 32px, idealmente 8% da largura da tela (viewport), e no máximo 99px */
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    font-size: clamp(24px, 6vw, 77px); /* Define um tamanho de fonte responsivo: no mínimo 24px, idealmente 6% da largura da tela (viewport), e no máximo 77px */
+    font-style: italic; /*Funciona dependendo da fonte usada, neste caso não*/
+    font-weight: bold; /*Também depende da fonte usada, neste caso também não funciona*/
+    color: #2e8b57;
+}
+
+.Aqua { 
+    color: #40e0d0;
+}
+
+.paragrafos {
+    padding: 14px 16px;
+    overflow: hidden;
+    display: block;
+    background-size: cover; 
+    color: #cccccc;
+    text-transform: capitalize; /*Todas as palavras começam em maiúsculo*/
+    text-indent: 35px; /*Coloca um recuo em cada paragrafo*/
+    direction: ltr; /*Parecido com "Text-align:left"*/
+    unicode-bidi: bidi-override; /*Combinado com o "directio:rtl" o texto fica espelhado, usado mais em idiomas que é de tras pra frente*/
+    font-family: 'Minecraft', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px; /*Espaçamento de 1 pixel entre cada letra*/
+    line-height: 1.2; /*Coloca um espaçamento entre as linhas*/
+    word-spacing: 2px; /*Espaçamento ente as palavras*/
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../templates/img/TemplatePoster.jpg);
+    background: #87cefa cover no-repeat center url(img/TemplatePoster.jpg); /*junta todas as outras propriedades background usadas*/
+}
+
+section a:hover, #dropdown:hover #dropbtn{
+    display: inline-block;
+}

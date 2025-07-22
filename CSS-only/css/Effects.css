@@ -1,0 +1,42 @@
+.whats a {
+    transition: 0.2s;
+}
+
+.whats a:hover {
+    transform: scale(1.05);
+    background-color: rgb(40, 130, 4);
+}
+
+#green {
+    transition: background-color 0.35s;
+}
+
+#red {
+    transition: background-color 0.35s;
+}
+
+#blue {
+    transition: background-color 0.35s;
+}
+
+#green:hover{
+    background-color: rgb(0, 64, 0);
+}
+
+#red:hover {
+    background-color: rgb(128, 0, 0);
+}
+
+#blue:hover {
+    background-color: rgb(0, 0, 128);
+}
+
+.menu a {
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #483d8b;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transform: scale(1.05) 
+}

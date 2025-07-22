@@ -1,0 +1,86 @@
+.lista {
+    text-align: center;
+}
+
+.whats a {
+    position: fixed; /*Independente de qualquer coisa isso sempre ficará amostra na tela, e sempre acima de tudo*/
+    display: inline-block;
+    font-family: 'Minecraft', sans-serif;
+    border-radius: 25px;
+    padding: 20px 27px;
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(60, 196, 6);
+}
+
+.lista div{
+    margin-top: 5px;
+    width: 300px;
+    height: 150px;
+    display: inline-flex; 
+    justify-content: center; /*Alinha horizontalmente*/
+    align-items: center; /*Alinha verticalmente */
+    font-family: 'Minecraft', sans-serif;
+    font-size: 25px;
+    padding: 50px;
+}
+
+#green {
+    border-radius: 12.5px;
+    color: black;
+    background-color: rgb(0, 128, 0);
+}
+
+#red {
+    border-radius: 12.5px;
+    color: black;
+    background-color: rgb(255, 0, 0);
+}
+
+#blue {
+    position: relative; /*Posição relativa a algo*/
+    top: 0px; /*Só para demonstrar o uso do position relative, como está 0px, não vai mudar nada*/
+    z-index: 0; /*Para demonstrar o uso de z-index, que altera a posição de acordo com a profundidade, só funciona com o position: relative*/
+    border-radius: 12.5px;
+    color: black;
+    background-color: rgb(0, 0, 255);
+}
+
+.container-centro {
+    position: relative; /*Com isso eu posso escrever o "position: absolute;" que qualquer container dentro desse conteiner será absoluto ao mesmo*/
+    height: 250px;      /*Também existe a "position: sticky;" que faz o container "grudar" no seu container pai, para ficar sempre amostra na tela enquanto rolar a página*/
+    border-radius: 80px;
+    background-color: #f0f8ff;
+    margin: auto;
+    display: flex;
+    font-family: 'Minecraft', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {  
+    margin-bottom: 50px;
+    margin-top: 95px;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    color: rgb(183, 180, 241, 0.5);
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 30px;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin: 20px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
