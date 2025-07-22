@@ -17,9 +17,9 @@
 
 :root {
     --bg-color: #fff;
-    --snd-bg-color: #d5fdf9;
     --text-color: #000;
-    --main-color: #007f73;
+    --snd-bg-color: #f3ad9e;
+    --main-color: #860909;
 }
 
 html {
