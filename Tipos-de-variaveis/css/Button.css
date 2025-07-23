@@ -1,0 +1,38 @@
+#campoVariavel {
+    padding: 10px 14px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    min-width: 180px;
+}
+
+#enviar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0e8dd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a87b5d;
+  border-radius: 10px;
+  border: 2px solid #f0e8dd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8c5f44;
+}
