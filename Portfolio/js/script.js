@@ -3,11 +3,6 @@ function Alerta_D(event) {
     alert("Não há nada para baixar!!");
 }
 
-function Alerta_L(event) {
-    event.preventDefault();
-    alert("Eu ainda não tenho idade para o LinkedIn!");
-}
-
 function Alerta_E(event) {
     event.preventDefault();
     alert("Isso foi feito só para decoração!");
