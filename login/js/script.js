@@ -140,8 +140,4 @@ function ValidarCadastro(event) {
         sucessoEl.innerHTML = erros[4];
         sucessoEl.style.display = "block";
     }
-
-    console.log("Email:", email, emailValido);
-    console.log("Senha:", senha, senhaValida);
-    console.log("User:", user, userValido);
 }
