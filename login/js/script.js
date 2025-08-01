@@ -24,7 +24,7 @@ function ValidarLogin(event) {
 
     const erros = [
       "Email incorreto ou inexistente!",
-      "Senha incorreta ou inválida!",
+      "Senha incorreta",
       "Dados incorretos!",
       "Login realizado com sucesso!"
     ];
