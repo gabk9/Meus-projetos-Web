@@ -1,5 +1,6 @@
 const result = document.getElementById('result');
 const buttons = document.querySelectorAll('button');
+const MAX_LENGTH = 17;
 
 let current = '';
 let display = '';
@@ -31,6 +32,11 @@ buttons.forEach(button => {
                 display = 'Erro';
             }
         } else {
+            // Não deixa digitar se atingir limite
+            if (display.length >= MAX_LENGTH) {
+                return; // sai sem fazer nada
+            }
+
             const operators = {
                 '+': '+',
                 '−': '-',
@@ -53,5 +59,20 @@ buttons.forEach(button => {
         }
 
         result.textContent = display || '0';
+        ajustarFonte();
     });
 });
+
+function ajustarFonte() {
+    const len = display.length;
+
+    if (len <= 10) {
+        result.style.fontSize = '5.5rem';
+    } else if (len <= 15) {
+        result.style.fontSize = '4.5rem';
+    } else if (len <= 20) {
+        result.style.fontSize = '3.5rem';
+    } else {
+        result.style.fontSize = '2.5rem';
+    }
+}
