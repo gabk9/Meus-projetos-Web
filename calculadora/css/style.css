@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Technology';
+  src: url('../fonts/Technology.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Technology';
+  src: url('../fonts/Technology-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Technology';
+  src: url('../fonts/Technology-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Technology';
+  src: url('../fonts/Technology-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+    background-image: url(../templates/bg.jpg);
+    background-position-x: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+:root {
+    --main-color: rgba(255, 255, 255, 0.148);
+    --text-color: rgb(0, 0, 0);
+    --bg-color: rgb(255, 255, 255);
+    --scr-color: rgb(233, 234, 210);
+}
+
+.calculator {
+    background-color: var(--main-color);
+    backdrop-filter: blur(2px);
+    min-height: 600px;
+    min-width: 500px;
+    border-radius: 2.7rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding: 0 1.15rem;
+    background-color: var(--scr-color);
+    min-height: 6.9rem;
+    font-family: 'Technology', sans-serif;
+    font-size: 5.5rem;
+    border-radius: 2rem;
+    margin: 20px;
+    text-align: right;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons .row1 {
+    margin-top: 32px;
+}
+
+.buttons button {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    min-width: 6.5rem;
+    min-height: 4.2rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+}
+
+.row5 button {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    min-width: 6.5rem;
+    min-height: 4.2rem;
+    border-radius: 1.6rem;
+}
+
+.row5 button:last-of-type {
+    min-width: 13.9rem;
+}
+
+.buttons button:hover {
+    transform: scale(1.04);
+    background-color: rgb(184, 184, 184);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.row1 button, 
+.buttons button:last-of-type {
+    background-color: rgb(245, 192, 93);
+}
+
+.row1 button:hover, 
+.buttons button:last-of-type:hover {
+    background-color: rgb(202, 167, 78);
+}
+
+.calculator,
+.screen,
+.buttons button {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 617px) {
+    .calculator {
+        width: 90%;
+        min-width: unset;
+        min-height: unset;
+        padding: 15px;
+    }
+
+    .screen {
+        font-size: 3.5rem;
+        min-height: 5rem;
+        padding: 0 0.8rem;
+    }
+
+    .buttons button {
+        font-size: 1.4rem;
+        min-width: 0;
+        min-height: 3.5rem;
+        flex: 1;
+    }
+
+    .row5 button:last-of-type {
+        min-width: unset;
+        flex: 2;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4,
+    .row5 {
+        gap: 8px;
+        margin: 10px 0;
+    }
+}
