@@ -11,6 +11,7 @@
     --text-color: rgb(0, 0, 0);
     --bg-color: rgb(255, 255, 255);
     --error-color: rgb(208, 7, 7);
+    --truth-color: rgb(0, 255, 0);
 }
 
 body {
@@ -121,7 +122,7 @@ input[type="submit"]:hover {
 
 .Valid-signup,
 .Valid-login {
-    color: rgb(0, 255, 0);
+    color: var(--truth-color);
     position: absolute;
     bottom: 115px;
     width: 100%;
@@ -129,8 +130,4 @@ input[type="submit"]:hover {
     display: non;
     font-size: 1rem;
     font-weight: 350;
-}
-
-.Invalid-email {
-    margin: 0;
 }
