@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="pagina para cadastro ou login">
+    <meta name="keywords" content="login, cadastro">
+    <meta name="author" content="Gabriel Oliveira Miranda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section class="login">
+        <h3>Login</h3>
+        <div class="login-content">
+            <input type="email" id="email" placeholder="Digite seu email", required>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+        </div>
+        <div class="login-bottom">
+            <div class="Invalid-email" id="email-error"></div>
+            <div class="Invalid-pass" id="pass-error"></div>
+            <div class="Valid-login" id="Valid-login"></div>
+            <input type="submit" onclick="ValidarLogin(event)" value="Login">
+            <div class="signup-btn" onclick="mostrarSignup()">Não possui uma conta? Criar</div>
+        </div>
+    </section>
+    
+    <section class="signup">
+        <h3>Cadastrar</h3>
+        <div class="signup-content">
+            <input type="email" id="email" placeholder="Digite seu email">
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <input type="text" id="user" placeholder="Digite seu usuário">
+        </div>
+        <div class="signup-bottom">
+            <div class="Invalid-email" id="email-error2"></div>
+            <div class="Invalid-pass" id="pass-error2"></div>
+            <div class="Invalid-user" id="user-error2"></div>
+            <div class="Valid-signup" id="Valid-signup2"></div>
+            <input type="submit" onclick="ValidarCadastro(event)" value="Cadastrar">
+            <div class="login-btn" onclick="mostrarLogin()">Já possui uma conta? Entrar</div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
