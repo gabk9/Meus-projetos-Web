@@ -6,31 +6,31 @@
 }
 
 @font-face {
-  font-family: 'Technology';
-  src: url('../fonts/Technology.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Technology';
+    src: url('../fonts/Technology.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Technology';
-  src: url('../fonts/Technology-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Technology';
+    src: url('../fonts/Technology-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Technology';
-  src: url('../fonts/Technology-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+    font-family: 'Technology';
+    src: url('../fonts/Technology-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'Technology';
-  src: url('../fonts/Technology-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
+    font-family: 'Technology';
+    src: url('../fonts/Technology-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
 
 body {
@@ -57,6 +57,7 @@ body {
     min-width: 500px;
     border-radius: 2.7rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
 .screen {
@@ -72,63 +73,49 @@ body {
     border-radius: 2rem;
     margin: 20px;
     text-align: right;
+    transition: all 0.3s ease;
 }
 
-.row1,
-.row2,
-.row3,
-.row4,
-.row5 {
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons .row1 {
-    margin-top: 32px;
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .buttons button {
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
-    min-width: 6.5rem;
     min-height: 4.2rem;
     border-radius: 1.6rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.row5 button {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    min-width: 6.5rem;
-    min-height: 4.2rem;
-    border-radius: 1.6rem;
+.buttons button:nth-child(-n+4),
+.buttons button:nth-child(8),
+.buttons button:nth-child(12),
+.buttons button:nth-child(16),
+.buttons button:nth-child(19) {
+    background-color: rgb(245, 192, 93);
 }
 
-.row5 button:last-of-type {
-    min-width: 13.9rem;
+.buttons button:nth-child(-n+4):hover,
+.buttons button:nth-child(8):hover,
+.buttons button:nth-child(12):hover,
+.buttons button:nth-child(16):hover,
+.buttons button:nth-child(19):hover {
+    background-color: rgb(202, 167, 78);
+}
+
+.buttons button:nth-child(19) {
+    grid-column: span 2;
 }
 
 .buttons button:hover {
     transform: scale(1.04);
     background-color: rgb(184, 184, 184);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.row1 button, 
-.buttons button:last-of-type {
-    background-color: rgb(245, 192, 93);
-}
-
-.row1 button:hover, 
-.buttons button:last-of-type:hover {
-    background-color: rgb(202, 167, 78);
-}
-
-.calculator,
-.screen,
-.buttons button {
-    transition: all 0.3s ease;
 }
 
 @media (max-width: 617px) {
@@ -145,24 +132,13 @@ body {
         padding: 0 0.8rem;
     }
 
+    .buttons {
+        gap: 10px;
+        padding: 10px;
+    }
+
     .buttons button {
         font-size: 1.4rem;
-        min-width: 0;
         min-height: 3.5rem;
-        flex: 1;
-    }
-
-    .row5 button:last-of-type {
-        min-width: unset;
-        flex: 2;
-    }
-
-    .row1,
-    .row2,
-    .row3,
-    .row4,
-    .row5 {
-        gap: 8px;
-        margin: 10px 0;
     }
 }
