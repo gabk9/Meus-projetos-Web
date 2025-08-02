@@ -89,7 +89,7 @@ body {
     min-height: 4.2rem;
     border-radius: 1.6rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.15s ease;
 }
 
 .buttons button:nth-child(-n+4),
@@ -113,9 +113,13 @@ body {
 }
 
 .buttons button:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
     background-color: rgb(184, 184, 184);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.buttons button:active {
+    transform: scale(0.975);
 }
 
 @media (max-width: 617px) {
