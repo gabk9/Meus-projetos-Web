@@ -1,6 +1,6 @@
 const result = document.getElementById('result');
 const buttons = document.querySelectorAll('button');
-const MAX_LENGTH = 17;
+const MAX_LENGTH = 25;
 
 let current = '';
 let display = '';
