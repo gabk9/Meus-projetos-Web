@@ -1,0 +1,29 @@
+Operador             Nome                                      Descrição
+
+
+=                    Atribuição simples                        Atribui o valor da direita à variável da esquerda
+-----------------------------------------------------------------------------------------------------------------
++=                   Atribuição com adição                     Soma o valor da direita ao da variável
+-----------------------------------------------------------------------------------------------------------------
+-=                   Atribuição com subtração                  Subtrai o valor da direita do valor atual
+-----------------------------------------------------------------------------------------------------------------
+*=                   Atribuição com multiplicação              Multiplica e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
+/=                   Atribuição com divisão                    Divide e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
+%=                   Atribuição com módulo                     Resto da divisão e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
+**=                  Atribuição com exponenciação              Eleva à potência e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
+<<=                  Atribuição com deslocamento à esquerda    Desloca bits à esquerda e atribui
+-----------------------------------------------------------------------------------------------------------------
+>>=                  Atribuição com deslocamento à direita     Desloca bits à direita preservando o sinal
+-----------------------------------------------------------------------------------------------------------------
+>>>=                 Atribuição com deslocamento sem sinal     Desloca bits à direita ignorando o sinal
+-----------------------------------------------------------------------------------------------------------------
+&=                   Atribuição com AND bit a bit              Aplica AND bit a bit e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
+^=                   Atribuição com XOR bit a bit              Aplica XOR bit a bit e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
+|=                   Atribuição com OR bit a bit               Aplica OR bit a bit e atribui o resultado
+-----------------------------------------------------------------------------------------------------------------
